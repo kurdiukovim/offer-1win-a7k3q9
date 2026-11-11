@@ -34,8 +34,8 @@ h1{font-size:calc(var(--u)*54);font-weight:750;line-height:1.1;letter-spacing:-.
 /* 1 */
 .s1{flex-direction:row;align-items:center;justify-content:space-between;gap:calc(var(--u)*40)}
 .s1 .txt{flex:1;min-width:0}
-.s1 .big{font-size:calc(var(--u)*100);font-weight:800;line-height:1.03;letter-spacing:-.035em}
-.s1 .big .a{display:block;background:linear-gradient(100deg,#ffd27a,var(--a) 55%,#e8860c);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+.s1 .big{font-size:calc(var(--u)*84);font-weight:800;line-height:1.03;letter-spacing:-.035em}
+.s1 .big .a{display:block;padding-right:.06em;background:linear-gradient(100deg,#ffd27a,var(--a) 55%,#e8860c);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
 .s1 .trio{flex:none;display:flex;gap:calc(var(--u)*16);align-items:center;margin-right:calc(var(--u)*-20)}
 .s1 .trio .clip{width:calc(var(--u)*170);height:calc(var(--u)*302)}
 .s1 .trio .clip:nth-child(1){transform:translateY(calc(var(--u)*30))}
@@ -104,8 +104,8 @@ hr{border:0;border-top:1px solid #2a2a2c;margin:calc(var(--u)*10) 0}
  .tag{font-size:calc(var(--u)*14);margin-bottom:calc(var(--u)*12)}
  h1{font-size:calc(var(--u)*38);margin-bottom:calc(var(--u)*20)}
  .line{font-size:calc(var(--u)*21)}
- .s1{flex-direction:column;align-items:stretch;justify-content:center;gap:calc(var(--u)*28)}
- .s1 .big{font-size:calc(var(--u)*66)}
+ .s1{flex-direction:column;align-items:stretch;justify-content:center;gap:calc(var(--u)*28);padding-bottom:calc(var(--u)*104)}
+ .s1 .big{font-size:calc(var(--u)*58)}
  .s1 .trio{justify-content:center;margin:0;gap:calc(var(--u)*12)}
  .s1 .trio .clip{width:calc(var(--u)*122);height:calc(var(--u)*217)}
  .s1 .trio .clip:nth-child(1){transform:translateY(calc(var(--u)*18))}.s1 .trio .clip:nth-child(3){transform:translateY(calc(var(--u)*-18))}
@@ -160,12 +160,12 @@ hr{border:0;border-top:1px solid #2a2a2c;margin:calc(var(--u)*10) 0}
 <!-- 2 -->
 <section class="slide">
 <div class="tag rv" style="--d:0">Как это работает</div>
-<h1 class="rv" style="--d:1">Конвейер авторских мультиков: <span class="a">60&nbsp;роликов за&nbsp;2&nbsp;недели</span></h1>
+<h1 class="rv" style="--d:1">Конвейер авторских мультиков: <span class="a">тысячи роликов, десятки&nbsp;аккаунтов</span></h1>
 <div class="grid">
 <div class="cell rv" style="--d:2"><b>60</b><span>роликов в&nbsp;конвейере за&nbsp;2&nbsp;недели с&nbsp;одного аккаунта</span></div>
 <div class="cell rv" style="--d:3"><b class="a">≈111 тыс.</b><span>в&nbsp;среднем просмотров на&nbsp;ролик</span></div>
-<div class="cell rv" style="--d:4"><b>до&nbsp;13,6×</b><span>разброс: лучший ролик выше среднего</span></div>
-<div class="cell rv" style="--d:5"><b>2 недели</b><span>на&nbsp;набор объёма в&nbsp;примере; срок по&nbsp;каждому этапу фиксируем в&nbsp;договоре</span></div>
+<div class="cell rv" style="--d:4"><b>5%</b><span>роликов&nbsp;— 3&nbsp;из&nbsp;60&nbsp;— набрали от&nbsp;600&nbsp;тыс. до&nbsp;1,5&nbsp;млн просмотров</span></div>
+<div class="cell rv" style="--d:5"><b>11,1 тыс.</b><span>подписчиков у&nbsp;аккаунта на&nbsp;момент замера</span></div>
 </div>
 <div class="how rv" style="--d:6">
 <div class="mini"><i>ЛОГО</i><video muted loop playsinline autoplay preload="auto" poster="assets/poster3.jpg"><source src="assets/clip3.mp4" type="video/mp4"></video></div>
@@ -183,8 +183,8 @@ hr{border:0;border-top:1px solid #2a2a2c;margin:calc(var(--u)*10) 0}
 <div class="card rv" style="--d:3"><div class="clip"><img src="assets/shot2.jpg" alt=""></div><div class="n">605 тыс.</div><div class="c">второй по&nbsp;охвату&nbsp;— в&nbsp;5,5 раза выше среднего</div></div>
 </div>
 <div class="r">
-<div class="line rv" style="--d:4">Из&nbsp;60 роликов часть уходит в&nbsp;сотни тысяч и&nbsp;миллион просмотров&nbsp;— логотип внутри каждого.</div>
-<div class="line g rv" style="--d:5">Всего по&nbsp;аккаунту: 6,6 млн просмотров.</div>
+<div class="line rv" style="--d:4">Из&nbsp;60 роликов 5%&nbsp;уходят в&nbsp;сотни тысяч и&nbsp;миллион просмотров&nbsp;— логотип внутри каждого.</div>
+<div class="line g rv" style="--d:5">Всего по&nbsp;аккаунту: 6,6 млн просмотров за&nbsp;2&nbsp;недели.</div>
 <div class="more rv" style="--d:6">
 <div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster3.jpg"><source src="assets/clip3.mp4" type="video/mp4"></video></div>
 <div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster4.jpg"><source src="assets/clip4.mp4" type="video/mp4"></video></div>
@@ -247,6 +247,14 @@ document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.
 document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;
  if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.2)go(dx<0?i+1:i-1);else if(Math.abs(dy)>60&&Math.abs(dy)>Math.abs(dx)*1.5)go(dy<0?i+1:i-1);x0=null},{passive:true});
 document.addEventListener('click',function(e){if(e.target.closest('.arr,.dots'))return;if(window.matchMedia('(hover:none)').matches){var w=window.innerWidth;if(e.clientX>w*.7)go(i+1);else if(e.clientX<w*.3)go(i-1)}});
+// заголовок 1-го слайда: самое длинное слово всегда помещается в колонку текста
+function fit(){var b=document.querySelector('.s1 .big'),t=document.querySelector('.s1 .txt');if(!b||!t)return;
+ b.style.fontSize='';var cs=parseFloat(getComputedStyle(b).fontSize),pr=document.createElement('span');
+ pr.style.cssText='position:absolute;visibility:hidden;white-space:nowrap;left:0;top:0';pr.textContent='просмотров';b.appendChild(pr);
+ var w=pr.getBoundingClientRect().width,av=t.clientWidth;b.removeChild(pr);
+ if(w>av*.96&&w>0)b.style.fontSize=(cs*av*.96/w)+'px'}
+fit();window.addEventListener('resize',fit);window.addEventListener('orientationchange',fit);window.addEventListener('load',fit);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
 // iOS: первый жест пользователя запускает видео, если автоплей отклонён (экономия заряда)
 document.addEventListener('touchstart',media,{once:true,passive:true});
 document.addEventListener('visibilitychange',media);
