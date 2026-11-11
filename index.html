@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0c">
+<meta name="robots" content="noindex,nofollow">
+<title>1Win: 350 млн просмотров за 50 000 $</title>
+<style>
+:root{--u:min(100vw/1280,100vh/720);--a:#f5a623;--g:#8a8a8e;--bg:#0b0b0c;--ln:#3a3a3c;--ease:cubic-bezier(.2,.7,.2,1)}
+@media (max-aspect-ratio:1/1){:root{--u:min(100vw/480,100vh/860)}}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:var(--bg);overflow:hidden;overscroll-behavior:none}
+body{font-family:-apple-system,"SF Pro Display","Helvetica Neue",Arial,sans-serif;color:#f2f2f2;-webkit-font-smoothing:antialiased;touch-action:pan-y}
+.a{color:var(--a)}.g{color:var(--g)}
+.deck{position:fixed;inset:0}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
+ padding:calc(var(--u)*56) calc(var(--u)*90);opacity:0;visibility:hidden;transform:translateX(calc(var(--u)*60));
+ transition:opacity .7s var(--ease),transform .7s var(--ease),visibility 0s .7s;overflow:hidden;
+ background:radial-gradient(ellipse 60% 55% at 85% 10%,rgba(245,166,35,.16),transparent 70%),radial-gradient(ellipse 50% 45% at 5% 100%,rgba(245,166,35,.07),transparent 70%),var(--bg)}
+.slide.prev{transform:translateX(calc(var(--u)*-60))}
+.slide.on{opacity:1;visibility:visible;transform:none;transition:opacity .7s var(--ease),transform .7s var(--ease),visibility 0s}
+.tag{font-size:calc(var(--u)*18);letter-spacing:calc(var(--u)*3);text-transform:uppercase;color:var(--g);margin-bottom:calc(var(--u)*16)}
+h1{font-size:calc(var(--u)*54);font-weight:750;line-height:1.1;letter-spacing:-.02em;margin-bottom:calc(var(--u)*28)}
+.line{font-size:calc(var(--u)*28);line-height:1.35;margin-bottom:calc(var(--u)*12)}
+.src{position:absolute;left:calc(var(--u)*90);right:calc(var(--u)*90);bottom:calc(var(--u)*34);font-size:calc(var(--u)*16);color:var(--g)}
+/* появления */
+.rv{opacity:0;transform:translateY(calc(var(--u)*26));filter:blur(calc(var(--u)*6))}
+.on .rv{animation:rv .8s var(--ease) forwards;animation-delay:calc(var(--d,0)*.12s + .25s)}
+@keyframes rv{to{opacity:1;transform:none;filter:none}}
+/* клипы */
+.clip{position:relative;overflow:hidden;border-radius:calc(var(--u)*22);background:#1a1a1c;
+ box-shadow:0 0 0 1px rgba(245,166,35,.35),0 calc(var(--u)*30) calc(var(--u)*80) rgba(0,0,0,.6),0 0 calc(var(--u)*70) rgba(245,166,35,.12)}
+.clip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.clip video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+/* 1 */
+.s1{flex-direction:row;align-items:center;justify-content:space-between;gap:calc(var(--u)*40)}
+.s1 .txt{flex:1;min-width:0}
+.s1 .big{font-size:calc(var(--u)*100);font-weight:800;line-height:1.03;letter-spacing:-.035em}
+.s1 .big .a{display:block;background:linear-gradient(100deg,#ffd27a,var(--a) 55%,#e8860c);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+.s1 .trio{flex:none;display:flex;gap:calc(var(--u)*16);align-items:center;margin-right:calc(var(--u)*-20)}
+.s1 .trio .clip{width:calc(var(--u)*170);height:calc(var(--u)*302)}
+.s1 .trio .clip:nth-child(1){transform:translateY(calc(var(--u)*30))}
+.s1 .trio .clip:nth-child(3){transform:translateY(calc(var(--u)*-30))}
+/* 2 */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*18);margin:calc(var(--u)*6) 0 calc(var(--u)*24)}
+.cell{border:1px solid var(--ln);border-radius:calc(var(--u)*20);padding:calc(var(--u)*22) calc(var(--u)*22);background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01))}
+.cell b{display:block;font-size:calc(var(--u)*46);line-height:1.05;white-space:nowrap;letter-spacing:-.02em}
+.cell b.a{text-shadow:0 0 calc(var(--u)*30) rgba(245,166,35,.45)}
+.cell span{display:block;font-size:calc(var(--u)*19);color:var(--g);margin-top:calc(var(--u)*10);line-height:1.28}
+.how{display:flex;align-items:center;gap:calc(var(--u)*26);border:1px solid var(--a);border-radius:calc(var(--u)*22);padding:calc(var(--u)*18) calc(var(--u)*28);background:rgba(245,166,35,.06);box-shadow:0 0 calc(var(--u)*60) rgba(245,166,35,.12)}
+.how .mini{flex:none;position:relative;width:calc(var(--u)*72);height:calc(var(--u)*112);border:2px solid var(--a);border-radius:calc(var(--u)*14);background:#1a1a1c;overflow:hidden}
+.how .mini video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+.how .mini i{position:absolute;top:calc(var(--u)*7);right:calc(var(--u)*6);z-index:2;background:var(--a);color:#0b0b0c;font-style:normal;font-weight:800;font-size:calc(var(--u)*11);padding:calc(var(--u)*2) calc(var(--u)*6);border-radius:calc(var(--u)*5);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 calc(var(--u)*6) rgba(245,166,35,.0),0 0 calc(var(--u)*14) var(--a)}}
+.how .t{font-size:calc(var(--u)*28);line-height:1.3}
+/* 3 */
+.s3 .row{display:flex;gap:calc(var(--u)*40);align-items:flex-start}
+.s3 .cards{display:contents}
+.s3 .card{flex:none;width:calc(var(--u)*250)}
+.s3 .card .clip{width:100%;height:calc(var(--u)*380)}
+.s3 .card .n{font-size:calc(var(--u)*50);font-weight:750;margin-top:calc(var(--u)*14);line-height:1.05;letter-spacing:-.02em}
+.s3 .card .n.a{text-shadow:0 0 calc(var(--u)*30) rgba(245,166,35,.45)}
+.s3 .card .c{font-size:calc(var(--u)*20);color:var(--g);margin-top:calc(var(--u)*5);line-height:1.25}
+.s3 .r{flex:1;padding-top:calc(var(--u)*6)}
+.s3 .r .line{font-size:calc(var(--u)*30)}
+.s3 .more{display:flex;gap:calc(var(--u)*14);margin-top:calc(var(--u)*22)}
+.s3 .more .clip{width:calc(var(--u)*92);height:calc(var(--u)*164);border-radius:calc(var(--u)*14)}
+/* 4 */
+.pkg{font-size:calc(var(--u)*27);line-height:1.3;margin:calc(var(--u)*-12) 0 calc(var(--u)*20);color:var(--g)}
+.pkg b{color:#f2f2f2}
+.steps{display:flex;align-items:stretch;gap:calc(var(--u)*14);margin-bottom:calc(var(--u)*14)}
+.st{flex:1;border:1px solid var(--ln);border-radius:calc(var(--u)*20);padding:calc(var(--u)*16) calc(var(--u)*20);position:relative;overflow:hidden;background:rgba(255,255,255,.02)}
+.st.first{border-color:var(--a)}
+.st .fill{position:absolute;left:0;bottom:0;height:calc(var(--u)*5);width:0;background:linear-gradient(90deg,var(--a),#ffd27a);box-shadow:0 0 calc(var(--u)*18) var(--a)}
+.on .st .fill{animation:fill 1.1s var(--ease) forwards;animation-delay:calc(var(--d)*.45s + .9s)}
+@keyframes fill{to{width:100%}}
+.st .n{font-size:calc(var(--u)*17);letter-spacing:calc(var(--u)*2);text-transform:uppercase;color:var(--g)}
+.st .p,.st .r{font-size:calc(var(--u)*21);color:var(--g);margin-top:calc(var(--u)*8);line-height:1.2}
+.st .p b{display:block;font-size:calc(var(--u)*42);color:#f2f2f2;line-height:1.1}
+.st .r b{display:block;font-size:calc(var(--u)*42);color:var(--a);line-height:1.1;text-shadow:0 0 calc(var(--u)*24) rgba(245,166,35,.4)}
+.sa{align-self:center;font-size:calc(var(--u)*32);color:var(--a)}
+.tot{font-size:calc(var(--u)*22);margin-bottom:0}
+hr{border:0;border-top:1px solid #2a2a2c;margin:calc(var(--u)*10) 0}
+.cmp{display:flex;gap:calc(var(--u)*44);margin:calc(var(--u)*4) 0}
+.cmp div{font-size:calc(var(--u)*21);color:var(--g);line-height:1.3}
+.cmp b{display:block;font-size:calc(var(--u)*46);color:#f2f2f2;line-height:1.1;letter-spacing:-.02em}
+.cmp b.a{color:var(--a)}
+.next{display:flex;align-items:center;gap:calc(var(--u)*30);border:1px dashed var(--g);border-radius:calc(var(--u)*20);padding:calc(var(--u)*12) calc(var(--u)*22)}
+.next .t{flex:1;font-size:calc(var(--u)*21);line-height:1.3}
+.next .v{flex:none;font-size:calc(var(--u)*19);color:var(--g);line-height:1.2}
+.next .v b{display:block;font-size:calc(var(--u)*36);color:#f2f2f2;line-height:1.1}
+.next .v b.a{color:var(--a)}
+/* навигация */
+.dots{position:fixed;left:50%;bottom:calc(var(--u)*14 + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:10px;z-index:5}
+.dots i{width:8px;height:8px;border-radius:8px;background:#3a3a3c;transition:all .4s var(--ease);cursor:pointer}
+.dots i.on{width:26px;background:var(--a)}
+.arr{position:fixed;top:50%;width:48px;height:48px;margin-top:-24px;border-radius:50%;border:1px solid var(--ln);background:rgba(20,20,22,.6);color:#f2f2f2;font-size:22px;z-index:5;display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.arr.l{left:14px}.arr.r{right:14px}.arr.off{opacity:0;pointer-events:none}
+@media (hover:none){.arr{display:none}}
+.hint{position:fixed;right:calc(var(--u)*20);bottom:calc(var(--u)*10 + env(safe-area-inset-bottom));font-size:12px;color:#555;z-index:5}
+/* вертикально (телефон) */
+@media (max-aspect-ratio:1/1){
+ .slide{padding:calc(var(--u)*44) calc(var(--u)*30) calc(var(--u)*50)}
+ .src{left:calc(var(--u)*30);right:calc(var(--u)*30);bottom:calc(var(--u)*40);font-size:calc(var(--u)*13)}
+ .tag{font-size:calc(var(--u)*14);margin-bottom:calc(var(--u)*12)}
+ h1{font-size:calc(var(--u)*38);margin-bottom:calc(var(--u)*20)}
+ .line{font-size:calc(var(--u)*21)}
+ .s1{flex-direction:column;align-items:stretch;justify-content:center;gap:calc(var(--u)*28)}
+ .s1 .big{font-size:calc(var(--u)*66)}
+ .s1 .trio{justify-content:center;margin:0;gap:calc(var(--u)*12)}
+ .s1 .trio .clip{width:calc(var(--u)*122);height:calc(var(--u)*217)}
+ .s1 .trio .clip:nth-child(1){transform:translateY(calc(var(--u)*18))}.s1 .trio .clip:nth-child(3){transform:translateY(calc(var(--u)*-18))}
+ .grid{grid-template-columns:1fr 1fr;gap:calc(var(--u)*12)}
+ .cell{padding:calc(var(--u)*16)}
+ .cell b{font-size:calc(var(--u)*32)}
+ .cell span{font-size:calc(var(--u)*14)}
+ .how{gap:calc(var(--u)*16);padding:calc(var(--u)*14) calc(var(--u)*16)}
+ .how .t{font-size:calc(var(--u)*19)}
+ .s3 .row{flex-direction:column;gap:calc(var(--u)*18)}
+ .s3 .cards{display:flex;gap:calc(var(--u)*16)}
+ .s3 .card{width:auto;flex:1}
+ .s3 .card .clip{height:calc(var(--u)*268)}
+ .s3 .card .n{font-size:calc(var(--u)*34)}
+ .s3 .card .c{font-size:calc(var(--u)*14)}
+ .s3 .r .line{font-size:calc(var(--u)*20)}
+ .s3 .more .clip{width:calc(var(--u)*72);height:calc(var(--u)*128)}
+ .pkg{font-size:calc(var(--u)*18);margin:calc(var(--u)*-8) 0 calc(var(--u)*14)}
+ .steps{flex-direction:column;gap:calc(var(--u)*8)}
+ .st{padding:calc(var(--u)*10) calc(var(--u)*16);display:grid;grid-template-columns:auto 1fr 1fr;column-gap:calc(var(--u)*14);align-items:center}
+ .st .n{font-size:calc(var(--u)*13)}
+ .st .p,.st .r{margin-top:0;font-size:calc(var(--u)*13)}
+ .st .p b,.st .r b{font-size:calc(var(--u)*26)}
+ .sa{display:none}
+ .tot{font-size:calc(var(--u)*16)}
+ .cmp{gap:calc(var(--u)*18);flex-wrap:wrap}
+ .cmp div{font-size:calc(var(--u)*13)}.cmp b{font-size:calc(var(--u)*28)}
+ .next{flex-direction:column;align-items:flex-start;gap:calc(var(--u)*8);padding:calc(var(--u)*12) calc(var(--u)*16)}
+ .next .t{font-size:calc(var(--u)*15)}
+ .next .v{display:inline-block;margin-right:calc(var(--u)*18);font-size:calc(var(--u)*13)}.next .v b{font-size:calc(var(--u)*24)}
+ .hint{display:none}
+}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;filter:none;animation:none!important}.st .fill{width:100%;animation:none!important}.slide{transition:opacity .2s}}
+@media print{@page{size:1280px 720px;margin:0}html,body{overflow:visible;height:auto}.deck{position:static}.slide{position:relative;width:1280px;height:720px;opacity:1;visibility:visible;transform:none;page-break-after:always;--u:1px}.rv{opacity:1;transform:none;filter:none;animation:none}.st .fill{width:100%;animation:none}.dots,.arr,.hint{display:none}}
+</style></head><body>
+<div class="deck" id="deck">
+
+<!-- 1 -->
+<section class="slide s1 on">
+<div class="txt">
+<div class="tag rv" style="--d:0">Реальный аккаунт</div>
+<div class="big rv" style="--d:1">1&nbsp;аккаунт,<br>2&nbsp;недели,<span class="a">6,6&nbsp;млн просмотров</span></div>
+</div>
+<div class="trio rv" style="--d:3">
+<div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster3.jpg"><source src="assets/clip3.mp4" type="video/mp4"></video></div>
+<div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster4.jpg"><source src="assets/clip4.mp4" type="video/mp4"></video></div>
+<div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster5.jpg"><source src="assets/clip5.mp4" type="video/mp4"></video></div>
+</div>
+<div class="src">Instagram @turinzmotion, публичные просмотры роликов, снято 11.11.2026</div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+<div class="tag rv" style="--d:0">Как это работает</div>
+<h1 class="rv" style="--d:1">Конвейер авторских мультиков: <span class="a">60&nbsp;роликов за&nbsp;2&nbsp;недели</span></h1>
+<div class="grid">
+<div class="cell rv" style="--d:2"><b>60</b><span>роликов в&nbsp;конвейере за&nbsp;2&nbsp;недели с&nbsp;одного аккаунта</span></div>
+<div class="cell rv" style="--d:3"><b class="a">≈111 тыс.</b><span>в&nbsp;среднем просмотров на&nbsp;ролик</span></div>
+<div class="cell rv" style="--d:4"><b>до&nbsp;13,6×</b><span>разброс: лучший ролик выше среднего</span></div>
+<div class="cell rv" style="--d:5"><b>2 недели</b><span>на&nbsp;набор объёма в&nbsp;примере; срок по&nbsp;каждому этапу фиксируем в&nbsp;договоре</span></div>
+</div>
+<div class="how rv" style="--d:6">
+<div class="mini"><i>ЛОГО</i><video muted loop playsinline autoplay preload="auto" poster="assets/poster3.jpg"><source src="assets/clip3.mp4" type="video/mp4"></video></div>
+<div class="t">Логотип вашей компании&nbsp;— внутри каждого ролика.</div>
+</div>
+</section>
+
+<!-- 3 -->
+<section class="slide s3">
+<div class="tag rv" style="--d:0">Пример: Instagram @turinzmotion</div>
+<h1 class="rv" style="--d:1">Лучшие ролики аккаунта</h1>
+<div class="row">
+<div class="cards">
+<div class="card rv" style="--d:2"><div class="clip"><img src="assets/shot1.jpg" alt=""></div><div class="n a">1,5 млн</div><div class="c">лучший ролик&nbsp;— в&nbsp;13,6 раза выше среднего</div></div>
+<div class="card rv" style="--d:3"><div class="clip"><img src="assets/shot2.jpg" alt=""></div><div class="n">605 тыс.</div><div class="c">второй по&nbsp;охвату&nbsp;— в&nbsp;5,5 раза выше среднего</div></div>
+</div>
+<div class="r">
+<div class="line rv" style="--d:4">Из&nbsp;60 роликов часть уходит в&nbsp;сотни тысяч и&nbsp;миллион просмотров&nbsp;— логотип внутри каждого.</div>
+<div class="line g rv" style="--d:5">Всего по&nbsp;аккаунту: 6,6 млн просмотров.</div>
+<div class="more rv" style="--d:6">
+<div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster3.jpg"><source src="assets/clip3.mp4" type="video/mp4"></video></div>
+<div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster4.jpg"><source src="assets/clip4.mp4" type="video/mp4"></video></div>
+<div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster5.jpg"><source src="assets/clip5.mp4" type="video/mp4"></video></div>
+</div>
+</div>
+</div>
+<div class="src">Instagram @turinzmotion, публичные просмотры роликов, снято 11.11.2026</div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+<div class="tag rv" style="--d:0">Предложение</div>
+<h1 class="rv" style="--d:1"><span class="a">350&nbsp;млн</span> просмотров за&nbsp;<span class="a">50&nbsp;000&nbsp;$</span></h1>
+<div class="pkg rv" style="--d:2">Работаем по&nbsp;этапам. <b>Гарантия по&nbsp;первому этапу&nbsp;— 215&nbsp;млн.</b></div>
+<div class="steps">
+<div class="st first rv" style="--d:3"><div class="n">Этап 1</div><div class="p">предоплата<b>$30 000</b></div><div class="r">гарантия<b>215 млн</b></div><i class="fill" style="--d:0"></i></div>
+<div class="sa rv" style="--d:4">→</div>
+<div class="st rv" style="--d:4"><div class="n">Этап 2</div><div class="p">доплата<b>$10 000</b></div><div class="r">объём<b>280 млн</b></div><i class="fill" style="--d:1"></i></div>
+<div class="sa rv" style="--d:5">→</div>
+<div class="st rv" style="--d:5"><div class="n">Этап 3</div><div class="p">доплата<b>$10 000</b></div><div class="r">объём<b>350 млн</b></div><i class="fill" style="--d:2"></i></div>
+</div>
+<div class="line tot rv" style="--d:6">Итого: $30&nbsp;000 + $10&nbsp;000 + $10&nbsp;000 = <b>$50&nbsp;000</b>.</div>
+<hr>
+<div class="cmp rv" style="--d:7">
+<div><b class="a">$0,14</b>за&nbsp;1&nbsp;000 просмотров у&nbsp;нас</div>
+<div><b>$0,33</b>на&nbsp;рынке</div>
+<div><b>в&nbsp;2,3 раза</b>дешевле рынка</div>
+</div>
+<hr>
+<div class="next rv" style="--d:8">
+<div class="t">Если задачи будут выполнены, мы&nbsp;сможем продолжить работу. Например:</div>
+<div class="v"><b class="a">500 млн</b>просмотров</div>
+<div class="v"><b>$69 500</b>общая стоимость</div>
+</div>
+</section>
+
+</div>
+<div class="arr l off" id="pl" aria-label="Назад">‹</div><div class="arr r" id="nx" aria-label="Вперёд">›</div>
+<div class="dots" id="dots"></div>
+<div class="hint">← → · свайп</div>
+<script>
+(function(){
+var S=[].slice.call(document.querySelectorAll('.slide')),n=S.length,i=0,dots=document.getElementById('dots');
+S.forEach(function(_,k){var d=document.createElement('i');d.onclick=function(){go(k)};dots.appendChild(d)});
+function media(){S.forEach(function(s,k){[].forEach.call(s.querySelectorAll('video'),function(v){
+ if(k===i){var p=v.play();if(p&&p.catch)p.catch(function(){})}else{v.pause()}})})}
+function go(k){if(k<0||k>=n||k===i)return;
+ S.forEach(function(s,j){s.classList.toggle('on',j===k);s.classList.toggle('prev',j<k)});
+ i=k;[].forEach.call(dots.children,function(d,j){d.classList.toggle('on',j===i)});
+ document.getElementById('pl').classList.toggle('off',i===0);document.getElementById('nx').classList.toggle('off',i===n-1);
+ media();if(history.replaceState)history.replaceState(null,'','#'+(i+1))}
+document.getElementById('pl').onclick=function(){go(i-1)};document.getElementById('nx').onclick=function(){go(i+1)};
+document.addEventListener('keydown',function(e){var k=e.key;
+ if(k==='ArrowRight'||k==='ArrowDown'||k===' '||k==='PageDown'){e.preventDefault();go(i+1)}
+ else if(k==='ArrowLeft'||k==='ArrowUp'||k==='PageUp'){e.preventDefault();go(i-1)}
+ else if(k==='Home')go(0);else if(k==='End')go(n-1)});
+var x0=null,y0=null;
+document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;
+ if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.2)go(dx<0?i+1:i-1);else if(Math.abs(dy)>60&&Math.abs(dy)>Math.abs(dx)*1.5)go(dy<0?i+1:i-1);x0=null},{passive:true});
+document.addEventListener('click',function(e){if(e.target.closest('.arr,.dots'))return;if(window.matchMedia('(hover:none)').matches){var w=window.innerWidth;if(e.clientX>w*.7)go(i+1);else if(e.clientX<w*.3)go(i-1)}});
+// iOS: первый жест пользователя запускает видео, если автоплей отклонён (экономия заряда)
+document.addEventListener('touchstart',media,{once:true,passive:true});
+document.addEventListener('visibilitychange',media);
+var h=parseInt(location.hash.slice(1),10);dots.children[0].classList.add('on');if(h>1&&h<=n){i=-1;go(h-1)}else media();
+})();
+</script>
+</body></html>
