@@ -3,10 +3,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0b0b0c">
 <meta name="robots" content="noindex,nofollow">
-<title>1Win: 350 млн просмотров за 50 000 $</title>
+<title>1Win: 350 млн просмотров за 50 000 $</title><!-- v5 12.11.2026 -->
+
 <style>
 :root{--u:min(100vw/1280,100vh/720);--a:#f5a623;--g:#8a8a8e;--bg:#0b0b0c;--ln:#3a3a3c;--ease:cubic-bezier(.2,.7,.2,1)}
-@media (max-aspect-ratio:1/1){:root{--u:min(100vw/480,100vh/860)}}
+@media screen and (max-aspect-ratio:1/1){:root{--u:min(100vw/480,100vh/860)}}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;background:var(--bg);overflow:hidden;overscroll-behavior:none}
 body{font-family:-apple-system,"SF Pro Display","Helvetica Neue",Arial,sans-serif;color:#f2f2f2;-webkit-font-smoothing:antialiased;touch-action:pan-y}
@@ -93,18 +94,22 @@ hr{border:0;border-top:1px solid #2a2a2c;margin:calc(var(--u)*10) 0}
 .dots{position:fixed;left:50%;bottom:calc(var(--u)*14 + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:10px;z-index:5}
 .dots i{width:8px;height:8px;border-radius:8px;background:#3a3a3c;transition:all .4s var(--ease);cursor:pointer}
 .dots i.on{width:26px;background:var(--a)}
-.arr{position:fixed;top:50%;width:48px;height:48px;margin-top:-24px;border-radius:50%;border:1px solid var(--ln);background:rgba(20,20,22,.6);color:#f2f2f2;font-size:22px;z-index:5;display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
-.arr.l{left:14px}.arr.r{right:14px}.arr.off{opacity:0;pointer-events:none}
-@media (hover:none){.arr{display:none}}
+.arr{position:fixed;top:50%;width:40px;height:40px;margin-top:-20px;border-radius:50%;border:1px solid var(--ln);background:rgba(20,20,22,.6);color:#f2f2f2;font-size:22px;line-height:1;z-index:5;display:flex;align-items:center;justify-content:center;cursor:pointer;user-select:none;-webkit-user-select:none;transition:opacity .3s var(--ease),border-color .3s,color .3s;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.arr.l{left:10px}.arr.r{right:10px}.arr.off{opacity:0;pointer-events:none}
+.arr:hover{border-color:var(--a);color:var(--a)}
+.deck{cursor:grab;user-select:none;-webkit-user-select:none}.deck.drag{cursor:grabbing}
+.deck img,.deck video{-webkit-user-drag:none}
+@media (max-width:600px){.arr{display:none}}
 .hint{position:fixed;right:calc(var(--u)*20);bottom:calc(var(--u)*10 + env(safe-area-inset-bottom));font-size:12px;color:#555;z-index:5}
 /* вертикально (телефон) */
-@media (max-aspect-ratio:1/1){
+@media screen and (max-aspect-ratio:1/1){
  .slide{padding:calc(var(--u)*44) calc(var(--u)*30) calc(var(--u)*50)}
  .src{left:calc(var(--u)*30);right:calc(var(--u)*30);bottom:calc(var(--u)*40);font-size:calc(var(--u)*13)}
  .tag{font-size:calc(var(--u)*14);margin-bottom:calc(var(--u)*12)}
  h1{font-size:calc(var(--u)*38);margin-bottom:calc(var(--u)*20)}
  .line{font-size:calc(var(--u)*21)}
- .s1{flex-direction:column;align-items:stretch;justify-content:center;gap:calc(var(--u)*28);padding-bottom:calc(var(--u)*104)}
+ .s1{flex-direction:column;align-items:stretch;justify-content:center;gap:calc(var(--u)*40);padding-bottom:calc(var(--u)*110)}
+ .s1 .txt{flex:none}
  .s1 .big{font-size:calc(var(--u)*58)}
  .s1 .trio{justify-content:center;margin:0;gap:calc(var(--u)*12)}
  .s1 .trio .clip{width:calc(var(--u)*122);height:calc(var(--u)*217)}
@@ -137,25 +142,26 @@ hr{border:0;border-top:1px solid #2a2a2c;margin:calc(var(--u)*10) 0}
  .next .t{font-size:calc(var(--u)*15)}
  .next .v{display:inline-block;margin-right:calc(var(--u)*18);font-size:calc(var(--u)*13)}.next .v b{font-size:calc(var(--u)*24)}
  .hint{display:none}
+ .arr{top:auto;bottom:calc(8px + env(safe-area-inset-bottom));margin-top:0;width:34px;height:34px;font-size:20px}
 }
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;filter:none;animation:none!important}.st .fill{width:100%;animation:none!important}.slide{transition:opacity .2s}}
 @media print{@page{size:1280px 720px;margin:0}html,body{overflow:visible;height:auto}.deck{position:static}.slide{position:relative;width:1280px;height:720px;opacity:1;visibility:visible;transform:none;page-break-after:always;--u:1px}.rv{opacity:1;transform:none;filter:none;animation:none}.st .fill{width:100%;animation:none}.dots,.arr,.hint{display:none}}
+@media print{.s1 .big{font-size:76px}.s1 .big .a{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:#f5a623;-webkit-text-fill-color:#f5a623;padding:0}.s3 .card .clip{height:318px}.s3 .card .n{font-size:44px;margin-top:10px}.s3 .card .c{font-size:18px}}
 </style></head><body>
 <div class="deck" id="deck">
 
 <!-- 1 -->
 <section class="slide s1 on">
 <div class="txt">
-<div class="tag rv" style="--d:0">Авторские мультики с&nbsp;вашим логотипом</div>
-<div class="big rv" style="--d:1">350&nbsp;млн просмотров<span class="a">по&nbsp;цене 0,14&nbsp;$</span></div>
-<div class="line g rv" style="--d:2;margin-top:calc(var(--u)*18)">за&nbsp;1&nbsp;000 просмотров</div>
+<div class="tag rv" style="--d:0">Реальный аккаунт</div>
+<div class="big rv" style="--d:1">1&nbsp;аккаунт,<br>2&nbsp;недели,<span class="a">6,6&nbsp;млн просмотров</span></div>
 </div>
 <div class="trio rv" style="--d:3">
 <div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster3.jpg"><source src="assets/clip3.mp4" type="video/mp4"></video></div>
 <div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster4.jpg"><source src="assets/clip4.mp4" type="video/mp4"></video></div>
 <div class="clip"><video muted loop playsinline autoplay preload="auto" poster="assets/poster5.jpg"><source src="assets/clip5.mp4" type="video/mp4"></video></div>
 </div>
-<div class="src">Ролики в&nbsp;примере: Instagram @turinzmotion</div>
+<div class="src">Instagram @turinzmotion, публичные просмотры роликов, снято 11.11.2026</div>
 </section>
 
 <!-- 2 -->
@@ -226,7 +232,7 @@ hr{border:0;border-top:1px solid #2a2a2c;margin:calc(var(--u)*10) 0}
 </div>
 <div class="arr l off" id="pl" aria-label="Назад">‹</div><div class="arr r" id="nx" aria-label="Вперёд">›</div>
 <div class="dots" id="dots"></div>
-<div class="hint">← → · свайп</div>
+<div class="hint">← → · мышь · свайп</div>
 <script>
 (function(){
 var S=[].slice.call(document.querySelectorAll('.slide')),n=S.length,i=0,dots=document.getElementById('dots');
@@ -247,6 +253,19 @@ var x0=null,y0=null;
 document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
 document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;
  if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.2)go(dx<0?i+1:i-1);else if(Math.abs(dy)>60&&Math.abs(dy)>Math.abs(dx)*1.5)go(dy<0?i+1:i-1);x0=null},{passive:true});
+// мышь: перетаскивание влево-вправо
+var deck=document.getElementById('deck'),mx=null,my=null;
+deck.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse'||e.button!==0)return;mx=e.clientX;my=e.clientY;deck.classList.add('drag')});
+function mend(e){if(mx===null)return;var dx=e.clientX-mx,dy=e.clientY-my;mx=null;deck.classList.remove('drag');
+ if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.2)go(dx<0?i+1:i-1)}
+window.addEventListener('pointerup',mend);window.addEventListener('pointercancel',function(){mx=null;deck.classList.remove('drag')});
+deck.addEventListener('dragstart',function(e){e.preventDefault()});
+// колесо / тачпад: один жест = один слайд
+var wl=false,wt=0,wq=null;
+window.addEventListener('wheel',function(e){e.preventDefault();
+ var d=Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY;if(Math.abs(d)<4)return;
+ clearTimeout(wq);wq=setTimeout(function(){wl=false},160);
+ if(wl||Date.now()-wt<650)return;wl=true;wt=Date.now();go(d>0?i+1:i-1)},{passive:false});
 document.addEventListener('click',function(e){if(e.target.closest('.arr,.dots'))return;if(window.matchMedia('(hover:none)').matches){var w=window.innerWidth;if(e.clientX>w*.7)go(i+1);else if(e.clientX<w*.3)go(i-1)}});
 // заголовок 1-го слайда: самое длинное слово всегда помещается в колонку текста
 function fit(){var b=document.querySelector('.s1 .big'),t=document.querySelector('.s1 .txt');if(!b||!t)return;
